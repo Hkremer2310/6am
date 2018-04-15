@@ -9,10 +9,53 @@ body {
     font-family: Arial;
 }
 
+.header {
+    padding-top: 10px;
+    background-color: #fafafa;
+    height: auto;
+    width: 100%;
+    border-bottom: 1px solid #d3d3d3;
+    overflow: hidden;
+  }
+
+.hours {
+  font-weight: bold;
+  margin: 0;
+}
+
+.logo {
+
+    width: 20%;
+    float: left;
+    margin-left: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.header-middle {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.header-right {
+    float: right;
+    width: 20%;
+    margin-right: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
 /* Style the top navigation bar */
 .topnav {
     overflow: hidden;
     background-color: #333;
+    bottom: 0;
+    width: 100%;
+    margin-left: 0;
+    clear: both;
+    display: block;
 }
 
 /* Style the topnav links */
@@ -37,11 +80,10 @@ body {
     border-radius: 25px;
     font-weight: bold;
     padding: 10px;
-    margin: 25px;
+    margin-left: 100px;
     text-align: center;
-    -webkit-column-count: 2;  /* Chrome, Safari, Opera */
-    -moz-column-count: 2; /* Firefox */
-   column-count: 2;
+    column-count: 2;
+    width: 80%;
  }
 
 
@@ -82,4 +124,5 @@ body {
 @media (max-width: 500px) {
     .column.side, .column.middle {
         width: 100%;
+      }
     }
