@@ -5,9 +5,11 @@
 body {
     background: url("../img/camera-classic.jpg") center center no-repeat fixed;
     background-size: cover;
-    margin: 0;
+    margin: auto;
     font-family: Arial;
 }
+
+/* header */
 
 .header {
     padding-top: 10px;
@@ -19,52 +21,33 @@ body {
     text-align: center;
   }
 
+.cc {
+    text-align: center;
+  }
+
 .hours {
   font-weight: bold;
   margin: 0;
+  text-align: center;
 }
 
 .column-center {
   display: inline-block;
   width: 40%;
-  /* text-align: center; */
+
 }
 
 .column-left {
   float: left;
   width: 30%;
-  /* text-align: center; */
+
 }
 
 .column-right {
   float: right;
   width: 30%;
-  /* text-align: center; */
 }
 
-/* .logo {
-
-    width: 20%;
-    float: left;
-    margin-left: 20px;
-    text-align: center;
-    padding: 20px;
-}
-
-.header-middle {
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-.header-right {
-    float: right;
-    width: 20%;
-    margin-right: 20px;
-    text-align: center;
-    padding: 20px;
-} */
 
 /* Style the top navigation bar */
 .topnav {
@@ -93,17 +76,16 @@ body {
     color: black;
 }
 
+/* main section */
 .display {
     background-color: #fff;
     opacity: 0.8;
     border-radius: 25px;
     font-weight: bold;
-    padding: 10px;
-    /* margin-top: 50px;*/
-    margin: auto;
+    padding: 20px;
+    margin: 50px auto;
     text-align: center;
     position: relative;
-    /* column-count: 2; */
     width: 80%;
  }
 
@@ -114,10 +96,10 @@ body {
 .col2 {
   float: right;
 } */
-
+/*
 .coffee {
   text-align: left;
-}
+} */
 
   h1 {
     margin: 0 auto;
@@ -133,13 +115,41 @@ body {
 
   h3 {
     font-weight: bolder;
+    text-align: center;
+  }
+
+  p {
+    text-align: left;
+  }
+
+  .wrapper {
+    width:100%;
+    height:100%;
+    margin:0 auto;
+    background:#ffffff
+  }
+
+  .h_iframe {
+    position:relative;
+  }
+
+  .h_iframe .ratio {
+    display:block;
+    width:100%;
+    height:auto;
+  }
+
+  .h_iframe iframe {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
   }
 
 
-
-
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 565px) {
     .column-center{ display: block; width: 100%; }
     .column-left{ float: none; width: 100%; }
     .column-right{ float: none; width: 100%; }
