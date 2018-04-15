@@ -16,6 +16,7 @@ body {
     width: 100%;
     border-bottom: 1px solid #d3d3d3;
     overflow: hidden;
+    text-align: center;
   }
 
 .hours {
@@ -23,7 +24,25 @@ body {
   margin: 0;
 }
 
-.logo {
+.column-center {
+  display: inline-block;
+  width: 40%;
+  /* text-align: center; */
+}
+
+.column-left {
+  float: left;
+  width: 30%;
+  /* text-align: center; */
+}
+
+.column-right {
+  float: right;
+  width: 30%;
+  /* text-align: center; */
+}
+
+/* .logo {
 
     width: 20%;
     float: left;
@@ -45,7 +64,7 @@ body {
     margin-right: 20px;
     text-align: center;
     padding: 20px;
-}
+} */
 
 /* Style the top navigation bar */
 .topnav {
@@ -80,12 +99,21 @@ body {
     border-radius: 25px;
     font-weight: bold;
     padding: 10px;
-    margin-left: 100px;
+    /* margin-top: 50px;*/
+    margin: auto;
     text-align: center;
-    column-count: 2;
+    position: relative;
+    /* column-count: 2; */
     width: 80%;
  }
 
+ /* .col1 {
+   float: left;
+ }
+
+.col2 {
+  float: right;
+} */
 
 .coffee {
   text-align: left;
@@ -107,22 +135,13 @@ body {
     font-weight: bolder;
   }
 
-  /* Cloud */
 
-  hr.style-five {
-      border: 0;
-      height: 0; /* Firefox... */
-      box-shadow: 0 0 10px 1px black;
-      margin: 25px;
-  }
-  hr.style-five:after {  /* Not really supposed to work, but does */
-      content: "\00a0";  /* Prevent margin collapse */
-  }
 
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 500px) {
-    .column.side, .column.middle {
-        width: 100%;
-      }
-    }
+@media screen and (max-width: 500px) {
+    .column-center{ display: block; width: 100%; }
+    .column-left{ float: none; width: 100%; }
+    .column-right{ float: none; width: 100%; }
+
+}
